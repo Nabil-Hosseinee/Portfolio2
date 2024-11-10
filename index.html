@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/general.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <script src="https://kit.fontawesome.com/96e027db6d.js" crossorigin="anonymous"></script>
+    <title>Hosseinee Nabil | Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <a href="#accueil" class="logo">Nabil</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar" id="navbar">
+            <a href="#accueil">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#projets">Projets</a>
+        </nav>
+    </header>
+
+
+    <section class="accueil" id="accueil">
+        <div class="home-img">
+            <img src="./assets/images/moi.JPG" alt="">
+        </div>
+
+        <div class="home-content">
+            <h1>Salut, c'est <span>Nabil</span></h1>
+            <h3 class="typing-text">Je suis un <span></span></h3>
+            <p>
+                Je suis un étudiant passionné par la programmation, avec pour objectif de devenir développeur web. En alliant design et technologie, je m'efforce de transformer des concepts en interfaces intuitives et attrayantes. Explorez mon portfolio et découvrez comment je peux contribuer à vos projets numériques.
+            </p>
+            <br>
+            <p>
+                <em>En recherche d'une alternance</em>
+            </p>
+
+            <div class="social-icon">
+                <a target="_blank" href="https://www.instagram.com/hn_webdev/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/nabil-hosseinee-0b20a3272/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a target="_blank" href="https://github.com/Nabil-Hosseinee">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <a href="./assets/CV/CV.pdf" target="_blank" class="btn">Mon CV</a>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <p class="serv_text" id="first_service">Frontend Développeur</p>
+        <div class="serv_box first_box">
+            <img class="serv_img" src="./assets/images/skills/html.webp" alt="">
+            <img class="serv_img" src="./assets/images/skills/css.webp" alt="">
+            <img class="serv_img" src="./assets/images/skills/javascript.webp" alt="">
+            <img class="serv_img" src="./assets/images/skills/jquery.svg" alt="">
+            <img class="serv_img" src="./assets/images/skills/bootstrap.png" alt="">
+            <img class="serv_img" src="./assets/images/skills/vue.png" alt="">
+        </div>
+
+        <p class="serv_text" id="second_service">Backend Développeur</p>
+        <div class="serv_box second_box">
+            <img class="serv_img" src="./assets/images/skills/php.webp" alt="">
+            <img class="serv_img" src="./assets/images/skills/sql.svg" alt="">
+            <img class="serv_img" src="./assets/images/skills/codeigniter.png" alt="">
+            <img class="serv_img" src="./assets/images/skills/git.png" alt="">
+            <img class="serv_img" src="./assets/images/skills/github.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="projets" id="projets">
+        <h2 class="heading">Projets</h2>
+
+        <ul class="project-filter">
+            <li class="list project-filter-active" data-filter="all">Tout</li>
+            <li class="list" data-filter="dev">Développement</li>
+            <li class="list" data-filter="crea">Multimédia</li>
+            <li class="list" data-filter="com">Communication</li>
+        </ul>
+
+        <div class="project-container container">
+            <a class="project-box project-box-link dev" data-project="dashboard">
+                <div class="project-overlay">
+                    <button id="dashboard" class="view-more-btn redirectBtn">Voir plus</button>
+                </div>
+                <img src="./assets/images/projects/dashboard/dashboard_red.png" alt="">
+                <h3>Dashboard</h3>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=WN7hKiMa0UE&ab_channel=HOSSEINEENabil" class="project-box project-box-link crea" data-project="crescendo">
+                <div class="project-overlay">
+                    <button class="view-more-btn">Voir plus</button>
+                </div>
+                <img src="./assets/images/projects/video_crescendo/crescendo_red.png" alt="">
+                <h3>Vidéo | Crescendo</h3>
+            </a>
+
+            <a class="project-box project-box-link com" data-project="affiche_mmi">
+                <div class="project-overlay">
+                    <button id="affiche_mmi" class="view-more-btn redirectBtn">Voir plus</button>
+                </div>
+                <img src="./assets/images/projects/affiche_MMI/affiche_mmi.jpg" alt="">
+                <h3>Affiche MMI</h3>
+            </a>
+
+            <a class="project-box project-box-link com" data-project="affiche_creme">
+                <div class="project-overlay">
+                    <button id="affiche_creme" class="view-more-btn redirectBtn">Voir plus</button>
+                </div>
+                <img src="./assets/images/projects/affiche_creme/creme.jpg" alt="">
+                <h3>Affiche crème</h3>
+            </a>
+
+            <a class="project-box project-box-link dev" data-project="frontend_mentor">
+                <div class="project-overlay">
+                    <button id="frontend_mentor" class="view-more-btn redirectBtn">Voir plus</button>
+                </div>
+                <img src="./assets/images/projects/frontend_mentor/frontend_red.png" alt="">
+                <h3>Frontend Mentor</h3>
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=y1i1NComhVs&ab_channel=HOSSEINEENabil" class="project-box project-box-link crea" data-project="marlow">
+                <div class="project-overlay">
+                    <button class="view-more-btn">Voir plus</button>
+                </div>
+                <img src="./assets/images/projects/video_marlow/marlow_red.png" alt="">
+                <h3>Vidéo | Détective Marlow</h3>
+            </a>
+
+            <a class="project-box project-box-link dev" data-project="bugtracker">
+                <div class="project-overlay">
+                    <button id="bugtracker" class="view-more-btn redirectBtn">Voir plus</button>
+                </div>
+                <img src="./assets/images/projects/bugtracker/t_admin.png" alt="">
+                <h3>BugTracker</h3>
+            </a>
+
+            <a class="project-box project-box-link com" data-project="spine_skatepark">
+                <div class="project-overlay">
+                    <button id="spine_skatepark" class="view-more-btn redirectBtn">Voir plus</button>
+                </div>
+                <img src="./assets/images/projects/logo_SpineSkatepark/skate.jpg" alt="">
+                <h3>Logo Spine Skatepark</h3>
+            </a>
+
+            <a class="project-box project-box-link dev" data-project="ecotracker">
+                <div class="project-overlay">
+                    <button id="ecotracker" class="view-more-btn redirectBtn">Voir plus</button>
+                </div>
+                <img src="./assets/images/projects/ecotracker/login.png" alt="">
+                <h3>Eco-Tracker</h3>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icon social-footer">
+            <a target="_blank" href="https://www.instagram.com/hn_webdev/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/nabil-hosseinee-0b20a3272/">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a target="_blank" href="https://github.com/Nabil-Hosseinee">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p>Nabil Hosseinee © 2024 - Tous droits réservés</p>
+    </footer>
+    
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
